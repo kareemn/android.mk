@@ -1133,7 +1133,9 @@ executables in sbin and host executables where we use static libraries instead.
 </tr>
 <tr>
 <td valign="top">LOCAL_UNINSTALLABLE_MODULE</td>
-<td valign="top"></td>
+<td valign="top">If set to true, this module will not be installed to system.img but build system still build it.
+Useful when you need some executable binary by $(INCLUDE_EXECUTABLE) but dont need it in system.img
+</td>
 </tr>
 <tr>
 <td valign="top">LOCAL_UNSTRIPPED_PATH</td>
